@@ -23,7 +23,7 @@ class StartWidget(QWidget):
         self.setLayout(vbox)
        
 
-class TestWidget1(QWidget):
+class Test1(QWidget):
     def __init__(self, btn_nextClicked, btn_backClicked):
         super().__init__()
         #widgets
@@ -57,7 +57,7 @@ class TestWidget1(QWidget):
         self.setLayout(vbox)
         
 
-class TestWidget2(QWidget):
+class Test2(QWidget):
     def __init__(self, btn_nextClicked, btn_backClicked):
         super().__init__()
         #widgets
@@ -90,7 +90,7 @@ class TestWidget2(QWidget):
         vbox.addLayout(hbox)
         self.setLayout(vbox)
       
-class TestWidget3(QWidget):
+class Test3(QWidget):
     def __init__(self, btn_nextClicked, btn_backClicked):
         super().__init__()
         #widgets
@@ -124,7 +124,7 @@ class TestWidget3(QWidget):
         self.setLayout(vbox)
     
 
-class EndWidget(QWidget):
+class End(QWidget):
     def __init__(self, res, res_list):
         super().__init__()
         #widgets
