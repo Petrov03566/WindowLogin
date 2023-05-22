@@ -1,10 +1,10 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 from PyQt6.QtCore import Qt
 import sys
-from modalsWindow import ModalLogin, CaptchaLogin
+from modals import ModalLogin, CaptchaLogin
 
 
-class LoginWindow(QWidget):
+class Login(QWidget):
     #  def enterClicked(self):
     #         if login(self.login_edit.text(), self.password_edit.text()):
     #             self.modal = ModalLogin()
@@ -54,6 +54,6 @@ class LoginWindow(QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    loginWindow = LoginWindow()
+    loginWindow = Login()
     loginWindow.show()
     app.exec()
