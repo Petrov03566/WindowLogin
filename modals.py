@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import QWidget, QLabel, QVBoxLayout, QStackedLayout, QLineE
 from PyQt6.QtCore import Qt, QTimer
 import random as rnd
 import string
-from testWindow import StartWidget, TestWidget1, TestWidget2, TestWidget3, EndWidget
+from test import StartWidget, TestWidget1, TestWidget2, TestWidget3, EndWidget
 
 class ModalLogin(QWidget):
     results = [False, False, False]
@@ -111,7 +111,7 @@ class CaptchaLogin(QWidget):
         #window settings
         self.setWindowFlag(Qt.WindowType.FramelessWindowHint)
         self.setWindowTitle("Подтвердите, что вы не робот")
-        self.setFixedSize(450, 250)
+        self.setFixedSize(450, 350)
         self.setWindowModality(Qt.WindowModality.ApplicationModal)
         #widgets
         captcha_string = string.digits + string.ascii_lowercase
